@@ -1,9 +1,14 @@
-var http = require('http');
+var express = require('express');
+var path = require('path');
 
-http.createServer(function (request, response) {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('Hello World\n');
-}).listen(8080);
+var app = express();
 
-console.log('Server started');
+var PORT = 3000; 
+
+app.get('/', function(request, response) {
+    response.sendFile(path.join(__dirname, '/views/static_pages', 'index.html'));
+});
+
+app.listen(PORT);
+console.log("Project Accessibility is running on port " + PORT);
 
