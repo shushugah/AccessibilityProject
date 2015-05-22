@@ -6,3 +6,6 @@ commit
 commit
 1) added express functionality
 2) added first static page
+
+commit
+1) Heroku cleanup (add port number, Procfile)

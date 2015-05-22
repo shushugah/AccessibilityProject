@@ -3,7 +3,7 @@ var path = require('path');
 
 var app = express();
 
-var PORT = 3000; 
+var PORT = (process.env.PORT || 3000); 
 
 app.get('/', function(request, response) {
     response.sendFile(path.join(__dirname, '/views/static_pages', 'index.html'));
