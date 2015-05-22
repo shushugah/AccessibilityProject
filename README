@@ -1,3 +1,8 @@
+commit
 1) npm init to create package.json
 2) npm install express --save (to save in package.json)
 3) created index.js, ran a simple hello world program
+
+commit
+1) added express functionality
+2) added first static page
